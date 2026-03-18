@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Level Detailing | Premium Mobile Auto Detailing</title>
+    <meta name="description" content="Premium mobile interior and exterior auto detailing designed to restore shine, comfort, and pride in your ride.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar glass-effect neon-edge">
+        <div class="logo">
+            <img src="assets/isolated-logo.png" alt="Next Level Detailing Logo" class="nav-logo">
+        </div>
+        <div class="nav-links">
+            <a href="#services">Packages</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="tel:5407717419" class="nav-phone">(540) 771-7419</a>
+            <a href="#booking" class="btn btn-primary btn-sm">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- 1) Hero Section -->
+    <header id="hero" class="hero-section cinematic-bg cinematic-pacing" style="background-image: url('assets/hero-bg-v2.png');">
+        <canvas id="sparks-canvas" class="sparks-layer"></canvas>
+        <div class="hero-glowing-streaks"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-brand-name">NEXT LEVEL<br><span class="text-glow">DETAILING</span></h1>
+            <div class="hero-badge mt-2">Mobile Detailing Done Right</div>
+            <p class="hero-subheadline">
+                Premium interior and exterior packages designed to restore showroom shine, comfort, and absolute pride in your ride.
+            </p>
+            <div class="hero-ctas">
+                <a href="#booking" class="btn btn-primary pulse-effect">Book Your Detail</a>
+                <a href="#transformation" class="btn btn-secondary">See The Results</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Transformation / Before & After Slider -->
+    <section id="transformation" class="transformation-section section-separator reveal-up cinematic-pacing">
+        <h2 class="section-title text-center">See the Difference <span class="text-glow">Professional Detailing</span> Makes</h2>
+        <p class="text-center section-subtitle">From dirty, dull, and neglected to glossy, refreshed, and attention-grabbing — <strong>Next Level Detailing</strong> delivers results you can see instantly.</p>
+        
+        <div class="slider-container reveal-up" id="slider-container">
+            <img src="assets/after-clean.png" alt="Clean Car" class="slider-img after-img" draggable="false">
+            <div class="slider-label label-after">AFTER</div>
+            
+            <img src="assets/before-dirty.png" alt="Dirty Car" class="slider-img before-img" id="before-img" draggable="false">
+            <div class="slider-label label-before" id="label-before">BEFORE</div>
+            
+            <div class="slider-handle" id="slider-handle">
+                <div class="slider-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFB300" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFB300" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-buttons text-center mt-2 reveal-up">
+            <a href="#booking" class="btn btn-primary pulse-effect">Book Your Detail</a>
+            <p class="mt-1" style="color: var(--accent-orange); font-weight: 500;">Get Your Vehicle Looking Like This</p>
+        </div>
+    </section>
+
+    <!-- 2) Trust / Value Strip -->
+    <section id="trust-strip" class="trust-strip">
+        <div class="trust-item"><span class="icon">🚐</span> Mobile Convenience</div>
+        <div class="trust-item"><span class="icon">✨</span> Premium Results</div>
+        <div class="trust-item"><span class="icon">⏱️</span> Fast Response</div>
+        <div class="trust-item"><span class="icon">🚙</span> SUV/Truck Friendly</div>
+    </section>
+
+    <!-- 3) Services / Package Section -->
+    <section id="services" class="services-section">
+        <h2 class="section-title text-center reveal-up">Premium <span class="text-glow">Detaling Packages</span></h2>
+        <div class="packages-grid">
+            <!-- Basic Package -->
+            <div class="package-card reveal-up">
+                <h3>Basic Refresh</h3>
+                <div class="price">From <span>$120</span></div>
+                <ul class="features">
+                    <li>Vacuuming</li>
+                    <li>Dust & Wipe Down</li>
+                    <li>Dash / Doors / Console</li>
+                    <li>Interior Windows</li>
+                </ul>
+                <a href="#booking" class="btn btn-outline w-100 mt-auto">Select Basic</a>
+            </div>
+            <!-- Gold Package -->
+            <div class="package-card featured reveal-up glow-border" style="transition-delay: 100ms;">
+                <div class="featured-badge">Most Popular</div>
+                <h3>Gold Package</h3>
+                <div class="price">From <span>$200</span></div>
+                <ul class="features">
+                    <li>Everything in Basic</li>
+                    <li>Deep Interior Cleaning</li>
+                    <li>Exterior Foam Wash</li>
+                    <li>Wheels & Tires Shine</li>
+                    <li>Premium Spray Wax</li>
+                </ul>
+                <a href="#booking" class="btn btn-primary w-100 mt-auto">Select Gold</a>
+            </div>
+            <!-- Premium Package -->
+            <div class="package-card reveal-up" style="transition-delay: 200ms;">
+                <h3>Premium Finish</h3>
+                <div class="price">From <span>$220</span></div>
+                <ul class="features">
+                    <li>Everything in Gold</li>
+                    <li>Carpet Extraction/Shampoo</li>
+                    <li>Leather Conditioning</li>
+                    <li>Premium Sealant</li>
+                    <li>Showroom Shine</li>
+                </ul>
+                <a href="#booking" class="btn btn-outline w-100 mt-auto">Select Premium</a>
+            </div>
+        </div>
+        
+        <div class="a-la-carte reveal-up">
+            <h3 class="text-center">Individual Services & Add-ons</h3>
+            <div class="add-ons-grid">
+                <div class="add-on"><span>Basic Interior</span> <span>$120</span></div>
+                <div class="add-on"><span>Basic Exterior</span> <span>$80</span></div>
+                <div class="add-on"><span>SUV/Truck Upcharge</span> <span>+$20</span></div>
+                <div class="add-on"><span>Shampoo Carpets/Rugs</span> <span>+$30</span></div>
+                <div class="add-on"><span>Pet Hair Removal</span> <span>+$35</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4) Visual Comparison Section -->
+    <section id="comparison" class="comparison-section reveal-up">
+        <div class="comparison-container glass-container">
+            <h2 class="section-title text-center">What You Get</h2>
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th>Basic Int.</th>
+                            <th>Basic Ext.</th>
+                            <th class="highlight-col">Gold Package</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Vacuum & Wipe Down</td><td>✔️</td><td>❌</td><td class="highlight-col">✔️</td><td>✔️</td></tr>
+                        <tr><td>Foam Wash & Dry</td><td>❌</td><td>✔️</td><td class="highlight-col">✔️</td><td>✔️</td></tr>
+                        <tr><td>Wheels & Tires</td><td>❌</td><td>✔️</td><td class="highlight-col">✔️</td><td>✔️</td></tr>
+                        <tr><td>Interior Windows</td><td>✔️</td><td>❌</td><td class="highlight-col">✔️</td><td>✔️</td></tr>
+                        <tr><td>Spray Wax</td><td>❌</td><td>❌</td><td class="highlight-col">✔️</td><td>✔️</td></tr>
+                        <tr><td>Carpet Shampoo</td><td>+$30</td><td>❌</td><td class="highlight-col">❌</td><td>✔️</td></tr>
+                        <tr><td>Leather Condition</td><td>❌</td><td>❌</td><td class="highlight-col">❌</td><td>✔️</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5) Why Choose Us -->
+    <section id="why-us" class="why-us-section">
+        <h2 class="section-title text-center reveal-up">Why Choose <span class="text-glow">Us</span></h2>
+        <div class="features-grid">
+            <div class="feature-card reveal-up">
+                <div class="feature-icon">🏅</div>
+                <h4>Professional Mobile Detailing</h4>
+                <p>We bring our top-tier setup right to your driveway. Total convenience without compromising quality.</p>
+            </div>
+            <div class="feature-card reveal-up" style="transition-delay: 100ms;">
+                <div class="feature-icon">🔍</div>
+                <h4>Attention to Detail</h4>
+                <p>We don't just clean; we restore. Every crevice, every corner is meticulously handled.</p>
+            </div>
+            <div class="feature-card reveal-up" style="transition-delay: 200ms;">
+                <div class="feature-icon">✨</div>
+                <h4>Premium Finish</h4>
+                <p>We use only the highest grade products designed for high-performance and luxury vehicles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6) Visual Gallery / Results -->
+    <section id="gallery" class="gallery-section reveal-up">
+        <h2 class="section-title text-center">Showroom <span class="text-glow">Results</span></h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="assets/exterior-wash.png" alt="Foam Wash"></div>
+            <div class="gallery-item"><img src="assets/hero-bg.png" alt="Finished Car"></div>
+            <div class="gallery-item"><img src="assets/interior-glow.png" alt="Interior Details"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section section-separator reveal-up cinematic-pacing">
+        <h2 class="section-title text-center">Client <span class="text-glow">Reviews</span></h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card glossy-panel reveal-up">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Absolutely incredible service. My car looks better than the day I bought it off the lot. The gold package was worth every penny."</p>
+                <h4>- Michael T.</h4>
+            </div>
+            <div class="testimonial-card glossy-panel reveal-up" style="transition-delay: 150ms;">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Next Level Detailing came right to my office. Super professional, fast, and the interior smells amazing. Highly recommend!"</p>
+                <h4>- Sarah K.</h4>
+            </div>
+            <div class="testimonial-card glossy-panel reveal-up" style="transition-delay: 300ms;">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"The attention to detail is unmatched. They managed to get out stains I thought were permanent. Premium experience from start to finish."</p>
+                <h4>- David L.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7) Quick Quote / Booking -->
+    <section id="booking" class="booking-section cinematic-bg section-separator reveal-up cinematic-pacing">
+        <div class="booking-overlay"></div>
+        <div class="booking-container glass-container relative">
+            <h2 class="text-center">Book Your Detail</h2>
+            <p class="text-center">Fill out the form below or call us at <a href="tel:5407717419">(540) 771-7419</a>.</p>
+            <form id="bookingForm" class="booking-form mt-2">
+                <div class="form-group">
+                    <label>Select Your Service</label>
+                    <select id="serviceSelect" class="form-control" required>
+                        <option value="">-- Choose a package --</option>
+                        <option value="basic-int">Basic Interior ($120)</option>
+                        <option value="basic-ext">Basic Exterior ($80)</option>
+                        <option value="gold">Gold Package ($200)</option>
+                        <option value="premium">Premium Package ($220)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Vehicle Type</label>
+                    <select id="vehicleType" class="form-control" required>
+                        <option value="sedan">Sedan / Coupe</option>
+                        <option value="suv">SUV / Truck (+$20)</option>
+                    </select>
+                </div>
+                <div class="form-group add-ons-group">
+                    <label>Add-ons</label>
+                    <label class="checkbox-label"><input type="checkbox" value="30"> Carpet Shampoo (+$30)</label>
+                    <label class="checkbox-label"><input type="checkbox" value="35"> Pet Hair Removal (+$35)</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Phone Number" required>
+                </div>
+                <button type="submit" class="btn btn-primary pulse-effect w-100 mt-1">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 9) Call to Action Section -->
+    <section class="final-cta reveal-up">
+        <h2 class="text-center">Ready to Experience <span class="text-glow">Next Level Detailing?</span></h2>
+        <p class="text-center">Your vehicle deserves the absolute best. Book today and experience true detailing perfection.</p>
+        <div class="cta-buttons text-center mt-2">
+            <a href="#booking" class="btn btn-primary pulse-effect">Book Your Detail Today</a>
+            <a href="tel:5407717419" class="btn btn-secondary">Call (540) 771-7419</a>
+        </div>
+    </section>
+
+    <!-- 10) Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="assets/isolated-logo.png" alt="Next Level Detailing Logo" class="footer-logo">
+                <h3 class="mt-1" style="font-family: var(--font-heading); font-size: 1.5rem;">NEXT LEVEL DETAILING</h3>
+                <p>Premium auto detailing tailored for absolute excellence.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <a href="#services">Interior</a>
+                <a href="#services">Exterior</a>
+                <a href="#services">Packages</a>
+                <a href="#comparison">Compare</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><a href="tel:5407717419" class="text-white">(540) 771-7419</a></p>
+                <a href="#booking" class="btn btn-secondary btn-sm mt-1">Book Online</a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Next Level Detailing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 8) Floating Chat Assistant -->
+    <div id="chatbot" class="chatbot-container">
+        <button id="chatbot-toggle" class="chatbot-toggle-btn pulse-effect">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </button>
+        <div id="chatbot-window" class="chatbot-window hidden glass-container">
+            <div class="chatbot-header">
+                <div class="bot-avatar-wrapper">
+                    <img src="assets/logo.png" alt="Bot Avatar" class="bot-avatar">
+                </div>
+                <div class="bot-info">
+                    <strong>NLD Assistant</strong>
+                    <span class="status-online">Online</span>
+                </div>
+                <button id="chatbot-close" class="chatbot-close">✖</button>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="message bot-message">
+                    Hi! I'm the Next Level Detailing assistant. How can I help you today?
+                </div>
+            </div>
+            <div id="chatbot-options" class="chatbot-options">
+                <!-- Predefined questions injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>
