@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Level Detailing | Premium Mobile Auto Detailing</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar glass-effect neon-edge">
+        <div class="logo">
+            <img src="assets/isolated-logo.png" alt="Next Level Detailing Logo" class="nav-logo">
+        </div>
+        <div class="nav-links">
+            <a href="#services">Packages</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="tel:5407717419" class="nav-phone">(540) 771-7419</a>
+            <a href="#booking" class="btn btn-primary btn-sm">Get a Quote</a>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section cinematic-bg cinematic-pacing" style="background-image: url('assets/hero-bg-v2.png');">
+        <canvas id="sparks-canvas" class="sparks-layer"></canvas>
+        <div class="hero-glowing-streaks"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-brand-name">NEXT LEVEL<br><span class="text-glow">DETAILING</span></h1>
+            <div class="hero-badge mt-2">Mobile Detailing Done Right</div>
+            <p class="hero-subheadline">
+                Premium interior and exterior packages designed to restore showroom shine, comfort, and absolute pride in your ride.
+            </p>
+            <div class="hero-ctas">
+                <a href="#booking" class="btn btn-primary pulse-effect">Book Your Detail</a>
+                <a href="#transformation" class="btn btn-secondary">See The Results</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="transformation" class="transformation-section section-separator reveal-up cinematic-pacing">
+        <h2 class="section-title text-center">See the Difference <span class="text-glow">Professional Detailing</span> Makes</h2>
+        <p class="text-center section-subtitle">From dirty, dull, and neglected to glossy, refreshed, and attention-grabbing — <strong>Next Level Detailing</strong> delivers results you can see instantly.</p>
+        
+        <div class="slider-container reveal-up" id="slider-container">
+            <img src="assets/after-clean.png" alt="Clean Car" class="slider-img after-img" draggable="false">
+            <div class="slider-label label-after">AFTER</div>
+            <img src="assets/before-dirty.png" alt="Dirty Car" class="slider-img before-img" id="before-img" draggable="false">
+            <div class="slider-label label-before" id="label-before">BEFORE</div>
+            <div class="slider-handle" id="slider-handle">
+                <div class="slider-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFB300" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFB300" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS Main -->
+    <script src="js/script.js"></script>
+</body>
+</html>
